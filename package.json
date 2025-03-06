@@ -1,0 +1,50 @@
+{
+  "name": "@storatech/remix-icons",
+  "version": "0.0.2",
+  "description": "Remix Icons React",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.global.js"
+    },
+    "./style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rm -rf ./dist",
+    "build": "tsup remix_icons_react/index.ts --loader .css=copy --format esm,cjs,iife --dts --no-splitting && cp remix_icons_react/style.css dist/style.css",
+    "postbuild": "node sync-css-ver",
+    "package": "pnpm publish",
+    "lint": "tsc && ts-standard"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/storatech"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/storatech/remix-icons.git",
+    "directory": "@storatech/remix-icons"
+  },
+  "author": "sadespresso",
+  "license": "ISC",
+  "devDependencies": {
+    "@swc/core": "^1.5.7",
+    "@types/react": "^18.2.57",
+    "tsup": "^8.0.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1"
+  }
+}

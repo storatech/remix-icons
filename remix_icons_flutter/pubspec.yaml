@@ -1,0 +1,26 @@
+name: remix_icons_flutter
+description: "Remix icon set for Flutter."
+version: 0.0.2
+homepage: https://github.com/storatech/remix_icons_flutter
+
+environment:
+  sdk: ">=3.3.3 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  fonts:
+    - family: "Remix Icons Filled"
+      fonts:
+        - asset: fonts/Remix-filled.ttf
+    - family: "Remix Icons Regular"
+      fonts:
+        - asset: fonts/Remix-regular.ttf

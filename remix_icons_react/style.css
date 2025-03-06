@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Remix Icons Filled";
+    src: url("https://cdn.stora.mn/static/packages/remix-icons/{{version}}/Remix-filled.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Remix Icons Regular";
+    src: url("https://cdn.stora.mn/static/packages/remix-icons/{{version}}/Remix-regular.ttf");
+    font-style: normal;
+}
+
+
+[data-remix-icons] {
+    font-family: "Remix Icons Regular";
+    font-weight: normal !important;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    white-space: nowrap;
+    min-width: 1em;
+    width: 1em;
+    max-width: 1em;
+
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    -o-user-select: none !important;
+}
+
+[data-remix-icons-variant="filled"] {
+    font-family: "Remix Icons Filled";
+}
+
+[data-remix-icons-variant="regular"] {
+    font-family: "Remix Icons Regular";
+}

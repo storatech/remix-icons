@@ -1,0 +1,9 @@
+node_modules
+fonts
+icons
+remix_icons_flutter
+remix_icons_react
+gen.sh
+gen-ts-obj.ks
+gen-dart-classes.js
+update-ver.js
