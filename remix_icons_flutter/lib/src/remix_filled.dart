@@ -82,10 +82,11 @@ class RemixFilled {
   static const IconData chat = IconData(0xf144, fontFamily: _fontFamily, fontPackage: _fontPackage);
   static const IconData category = IconData(0xf145, fontFamily: _fontFamily, fontPackage: _fontPackage);
   static const IconData card = IconData(0xf146, fontFamily: _fontFamily, fontPackage: _fontPackage);
-  static const IconData calendar = IconData(0xf147, fontFamily: _fontFamily, fontPackage: _fontPackage);
-  static const IconData building = IconData(0xf148, fontFamily: _fontFamily, fontPackage: _fontPackage);
-  static const IconData box = IconData(0xf149, fontFamily: _fontFamily, fontPackage: _fontPackage);
-  static const IconData bar_chart = IconData(0xf14a, fontFamily: _fontFamily, fontPackage: _fontPackage);
-  static const IconData ban_circle = IconData(0xf14b, fontFamily: _fontFamily, fontPackage: _fontPackage);
+  static const IconData camera = IconData(0xf147, fontFamily: _fontFamily, fontPackage: _fontPackage);
+  static const IconData calendar = IconData(0xf148, fontFamily: _fontFamily, fontPackage: _fontPackage);
+  static const IconData building = IconData(0xf149, fontFamily: _fontFamily, fontPackage: _fontPackage);
+  static const IconData box = IconData(0xf14a, fontFamily: _fontFamily, fontPackage: _fontPackage);
+  static const IconData bar_chart = IconData(0xf14b, fontFamily: _fontFamily, fontPackage: _fontPackage);
+  static const IconData ban_circle = IconData(0xf14c, fontFamily: _fontFamily, fontPackage: _fontPackage);
 
 }

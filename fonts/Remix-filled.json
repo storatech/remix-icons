@@ -69,9 +69,10 @@
     "chat": 61764,
     "category": 61765,
     "card": 61766,
-    "calendar": 61767,
-    "building": 61768,
-    "box": 61769,
-    "bar-chart": 61770,
-    "ban-circle": 61771
+    "camera": 61767,
+    "calendar": 61768,
+    "building": 61769,
+    "box": 61770,
+    "bar-chart": 61771,
+    "ban-circle": 61772
 }
