@@ -1,6 +1,6 @@
 {
   "name": "@storatech/remix-icons",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Remix Icons React",
   "type": "module",
   "main": "dist/index.js",
@@ -22,7 +22,7 @@
     "build": "tsup remix_icons_react/index.ts --loader .css=copy --format esm,cjs,iife --dts --no-splitting && cp remix_icons_react/style.css dist/style.css",
     "postbuild": "node sync-css-ver",
     "package": "pnpm publish",
-    "lint": "tsc && ts-standard"
+    "lint": "tsc --noEmit && ts-standard"
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
