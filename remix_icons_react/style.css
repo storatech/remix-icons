@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "Remix Icons Filled";
+    font-family: "Remix Icons Filled", "Remix Icons Regular";
     src: url("https://cdn.stora.mn/static/packages/remix-icons/{{version}}/Remix-filled.ttf");
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Remix Icons Regular";
+    font-family: "Remix Icons Regular", "Remix Icons Filled";
     src: url("https://cdn.stora.mn/static/packages/remix-icons/{{version}}/Remix-regular.ttf");
     font-style: normal;
 }
@@ -21,6 +21,10 @@
     min-width: 1em;
     width: 1em;
     max-width: 1em;
+
+    font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 
     user-select: none !important;
     -webkit-user-select: none !important;
