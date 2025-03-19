@@ -1,6 +1,5 @@
 import codePoints from "./codepoints"
-
-type IconKey = keyof typeof codePoints['filled'] | keyof typeof codePoints['regular']
+import { IconKey } from "./get-string"
 
 export interface RemixIconProps {
   icon: IconKey

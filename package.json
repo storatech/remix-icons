@@ -1,6 +1,6 @@
 {
   "name": "@storatech/remix-icons",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Remix Icons React",
   "type": "module",
   "main": "dist/index.js",

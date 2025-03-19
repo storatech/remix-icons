@@ -188,7 +188,8 @@ declare const codePoints: {
     };
 };
 
-type IconKey = keyof typeof codePoints['filled'] | keyof typeof codePoints['regular'];
+type IconKey = keyof typeof codePoints.filled | keyof typeof codePoints.regular;
+
 interface RemixIconProps {
     icon: IconKey;
     variant?: keyof typeof codePoints;
