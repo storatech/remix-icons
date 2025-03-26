@@ -62,16 +62,16 @@ var __toCommonJS = function(mod) {
     }), mod);
 };
 // remix_icons_react/index.ts
-var index_exports = {};
-__export(index_exports, {
+var remix_icons_react_exports = {};
+__export(remix_icons_react_exports, {
     codePoints: function() {
         return codePoints;
     },
     default: function() {
-        return index_default;
+        return remix_icons_react_default;
     }
 });
-module.exports = __toCommonJS(index_exports);
+module.exports = __toCommonJS(remix_icons_react_exports);
 // remix_icons_react/RemixIcon.tsx
 var import_react2 = __toESM(require("react"), 1);
 // remix_icons_react/codepoints.ts
@@ -300,7 +300,7 @@ var RemixIcon = Object.assign(RemixIconComponent, {
     displayName: "RemixIcon"
 });
 // remix_icons_react/index.ts
-var index_default = RemixIcon;
+var remix_icons_react_default = RemixIcon;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
     codePoints: codePoints

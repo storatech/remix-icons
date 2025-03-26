@@ -226,5 +226,5 @@ var RemixIcon = Object.assign(RemixIconComponent, {
     displayName: "RemixIcon"
 });
 // remix_icons_react/index.ts
-var index_default = RemixIcon;
-export { codePoints, index_default as default };
+var remix_icons_react_default = RemixIcon;
+export { codePoints, remix_icons_react_default as default };
