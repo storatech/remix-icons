@@ -74,6 +74,9 @@ __export(remix_icons_react_exports, {
 module.exports = __toCommonJS(remix_icons_react_exports);
 // remix_icons_react/RemixIcon.tsx
 var import_react2 = __toESM(require("react"), 1);
+// remix_icons_react/context.ts
+var import_react = require("react");
+var RemixIconContext = (0, import_react.createContext)({});
 // remix_icons_react/codepoints.ts
 var codePoints = {
     "regular": {
@@ -276,9 +279,6 @@ var getValue = function(variant, icon) {
     }
     return String.fromCodePoint(codePoint);
 };
-// remix_icons_react/context.ts
-var import_react = require("react");
-var RemixIconContext = (0, import_react.createContext)({});
 // remix_icons_react/RemixIcon.tsx
 var RemixIconComponent = function(param) {
     var css = param.css, propVariant = param.variant, propFilled = param.filled, icon = param.icon, className = param.className;

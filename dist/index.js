@@ -1,5 +1,8 @@
 // remix_icons_react/RemixIcon.tsx
 import React, { useContext } from "react";
+// remix_icons_react/context.ts
+import { createContext } from "react";
+var RemixIconContext = createContext({});
 // remix_icons_react/codepoints.ts
 var codePoints = {
     "regular": {
@@ -202,9 +205,6 @@ var getValue = function(variant, icon) {
     }
     return String.fromCodePoint(codePoint);
 };
-// remix_icons_react/context.ts
-import { createContext } from "react";
-var RemixIconContext = createContext({});
 // remix_icons_react/RemixIcon.tsx
 var RemixIconComponent = function(param) {
     var css = param.css, propVariant = param.variant, propFilled = param.filled, icon = param.icon, className = param.className;

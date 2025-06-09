@@ -1,7 +1,8 @@
 import { createContext } from 'react'
+import { RemixIconVariant } from './types'
 
 export interface RemixIconContextProps {
-  variant?: 'filled' | 'regular'
+  variant?: RemixIconVariant
   filled?: boolean
   className?: string
 }

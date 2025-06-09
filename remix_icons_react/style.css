@@ -1,18 +1,12 @@
 @font-face {
-    font-family: "Remix Icons Filled";
-    src: url("https://cdn.stora.mn/static/packages/remix-icons/{{version}}/Remix-filled.ttf");
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Remix Icons Regular";
-    src: url("https://cdn.stora.mn/static/packages/remix-icons/{{version}}/Remix-regular.ttf");
+    font-family: "Stora Remix Icons";
+    src: url("https://cdn.stora.mn/static/packages/remix-icons/{{version}}/StoraRemixIcons.ttf");
     font-style: normal;
 }
 
 
 [data-remix-icons] {
-    font-family: "Remix Icons Regular";
+    font-family: "Stora Remix Icons";
     font-weight: normal !important;
     display: inline-block;
     vertical-align: middle;
@@ -22,6 +16,7 @@
     width: 1em;
     max-width: 1em;
 
+    font-smooth: antialiased;
     font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -33,10 +28,6 @@
     -o-user-select: none !important;
 }
 
-[data-remix-icons-variant="filled"] {
-    font-family: "Remix Icons Filled", "Remix Icons Regular";
-}
-
-[data-remix-icons-variant="regular"] {
-    font-family: "Remix Icons Regular", "Remix Icons Filled";
+[data-remix-icons-variant] {
+    font-family: "Stora Remix Icons"
 }

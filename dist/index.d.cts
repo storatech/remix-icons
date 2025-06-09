@@ -1,11 +1,5 @@
 import React$1 from 'react';
 
-interface RemixIconContextProps {
-    variant?: 'filled' | 'regular';
-    filled?: boolean;
-    className?: string;
-}
-
 declare const codePoints: {
     readonly regular: {
         readonly youtube: 61697;
@@ -196,10 +190,17 @@ type IconKey = keyof typeof codePoints.regular;
 
 interface RemixIconProps {
     icon: IconKey;
-    variant?: keyof typeof codePoints;
+    variant?: RemixIconVariant;
     filled?: boolean;
     className?: string;
     css?: React.CSSProperties;
+}
+type RemixIconVariant = 'filled' | 'regular';
+
+interface RemixIconContextProps {
+    variant?: RemixIconVariant;
+    filled?: boolean;
+    className?: string;
 }
 
 declare const RemixIcon: React$1.FunctionComponent<RemixIconProps> & {

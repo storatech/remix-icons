@@ -2291,6 +2291,9 @@ function _type_of(obj) {
     });
     // remix_icons_react/RemixIcon.tsx
     var import_react2 = __toESM(require_react(), 1);
+    // remix_icons_react/context.ts
+    var import_react = __toESM(require_react(), 1);
+    var RemixIconContext = (0, import_react.createContext)({});
     // remix_icons_react/codepoints.ts
     var codePoints = {
         "regular": {
@@ -2493,9 +2496,6 @@ function _type_of(obj) {
         }
         return String.fromCodePoint(codePoint);
     };
-    // remix_icons_react/context.ts
-    var import_react = __toESM(require_react(), 1);
-    var RemixIconContext = (0, import_react.createContext)({});
     // remix_icons_react/RemixIcon.tsx
     var RemixIconComponent = function(param) {
         var css = param.css, propVariant = param.variant, propFilled = param.filled, icon = param.icon, className = param.className;

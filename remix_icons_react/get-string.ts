@@ -1,6 +1,7 @@
 import codePoints from './codepoints'
+import { RemixIconVariant } from './types'
 
-export type IconVariant = 'regular' | 'filled' | (string & {})
+export type IconVariant = RemixIconVariant
 export type IconKey = keyof typeof codePoints.regular
 
 export const getValue = (variant: IconVariant, icon: IconKey): string => {

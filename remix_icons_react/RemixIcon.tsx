@@ -1,7 +1,7 @@
 import React, { FunctionComponent, useContext } from 'react'
-import { RemixIconProps } from './types'
-import { getValue } from './get-string'
 import { RemixIconContext } from './context'
+import { getValue } from './get-string'
+import { RemixIconProps } from './types'
 
 const RemixIconComponent: FunctionComponent<RemixIconProps> = ({ css, variant: propVariant, filled: propFilled, icon, className }) => {
   const contextProps = useContext(RemixIconContext)
