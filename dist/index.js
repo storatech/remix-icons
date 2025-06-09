@@ -192,15 +192,15 @@ var codePoints = {
 var codepoints_default = codePoints;
 // remix_icons_react/get-string.ts
 var getValue = function(variant, icon) {
-    var codePoint = variant === "filled" && !icon.endsWith("-filled") ? codepoints_default.regular[icon + "-filled"] : codepoints_default.regular[icon];
+    var codePoint;
+    if (variant === "filled") {
+        var _codepoints_default_regular_, _ref;
+        codePoint = (_ref = (_codepoints_default_regular_ = codepoints_default.regular[icon + "-filled"]) !== null && _codepoints_default_regular_ !== void 0 ? _codepoints_default_regular_ : codepoints_default.regular[icon]) !== null && _ref !== void 0 ? _ref : codepoints_default.regular[icon.replace(/-filled$/, "")];
+    } else {
+        var _codepoints_default_regular_icon;
+        codePoint = (_codepoints_default_regular_icon = codepoints_default.regular[icon]) !== null && _codepoints_default_regular_icon !== void 0 ? _codepoints_default_regular_icon : codepoints_default.regular[icon + "-filled"];
+    }
     if (codePoint === void 0 || codePoint === null || isNaN(codePoint)) {
-        if (variant === "filled") {
-            if (!icon.endsWith("-filled")) {
-                return getValue("regular", icon + "-filled");
-            }
-        } else {
-            return getValue("filled", icon + (icon.endsWith("-filled") ? "" : "-filled"));
-        }
         return "";
     }
     return String.fromCodePoint(codePoint);
