@@ -1,2 +1,1 @@
-export 'src/remix_filled.dart';
-export 'src/remix_regular.dart';
+export "src/stora_remix_icons.dart";

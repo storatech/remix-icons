@@ -1,14 +1,21 @@
 import codePoints from './codepoints'
 
-export type IconVariant = keyof typeof codePoints
-export type IconKey = keyof typeof codePoints.filled | keyof typeof codePoints.regular
+export type IconVariant = 'regular' | 'filled' | (string & {})
+export type IconKey = keyof typeof codePoints.regular
 
-export const getValue = (variant: IconVariant, icon: IconKey, tryOtherVariant = true): string => {
-  const codePoint: number | undefined = (codePoints[variant] as any)[icon]
+export const getValue = (variant: IconVariant, icon: IconKey): string => {
+  const codePoint: number | undefined = codePoints.regular[icon]
 
   if (codePoint === undefined || codePoint === null || isNaN(codePoint)) {
-    if (!tryOtherVariant) return ''
-    return getValue(variant === 'filled' ? 'regular' : 'filled', icon, false)
+    if (variant === 'filled') {
+      if (!icon.endsWith('-filled')) {
+              return getValue('regular', (icon + '-filled') as IconKey)
+      }
+    } else {
+      return getValue('filled', (icon + (icon.endsWith('-filled') ? '' : '-filled')) as IconKey)
+    }
+
+    return ''
   }
 
   return String.fromCodePoint(codePoint)
