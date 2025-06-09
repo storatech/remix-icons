@@ -5,7 +5,7 @@ export type IconVariant = RemixIconVariant
 export type IconKey = keyof typeof codePoints.regular
 
 export const getValue = (variant: IconVariant, icon: IconKey): string => {
-  const codePoint: number | undefined = codePoints.regular[icon]
+  const codePoint: number | undefined = (variant === 'filled' && !icon.endsWith('-filled')) ? codePoints.regular[(icon+'-filled') as IconKey] : codePoints.regular[icon]
 
   if (codePoint === undefined || codePoint === null || isNaN(codePoint)) {
     if (variant === 'filled') {

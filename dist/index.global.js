@@ -2483,7 +2483,7 @@ function _type_of(obj) {
     var codepoints_default = codePoints;
     // remix_icons_react/get-string.ts
     var getValue = function(variant, icon) {
-        var codePoint = codepoints_default.regular[icon];
+        var codePoint = variant === "filled" && !icon.endsWith("-filled") ? codepoints_default.regular[icon + "-filled"] : codepoints_default.regular[icon];
         if (codePoint === void 0 || codePoint === null || isNaN(codePoint)) {
             if (variant === "filled") {
                 if (!icon.endsWith("-filled")) {
